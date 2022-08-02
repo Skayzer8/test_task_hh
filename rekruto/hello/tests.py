@@ -29,4 +29,4 @@ class ViewTestClass(TestCase):
     def test_error_page_template(self):
         """Проверка  шаблона кастомной страницы 404."""
         response = self.client.get('/nonexist-page/')
-        self.assertTemplateUsed(response, 'erors_pages/404.html')
+        self.assertTemplateUsed(response, 'errors_pages/404.html')
